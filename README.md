@@ -1,14 +1,14 @@
 # BinCorp Enterprise Infrastructure Lab
 
 ## Overview
-This project is a hands-on enterprise infrastructure lab that simulates the IT environment of a building management and office leasing company named **BinCorp**. The lab was designed to combine identity services, secure internal services, controlled remote access, web filtering, intrusion detection, and centralized monitoring into one cohesive environment.
+This project is a hands-on enterprise infrastructure lab that simulates the IT environment of a building management and office leasing company. The lab was designed to combine identity services, secure internal services, controlled remote access, web filtering, intrusion detection, and centralized monitoring into one cohesive environment.
 
 The objective of the project is not only to deploy infrastructure, but also to validate that security controls are working through practical use cases such as failed logon detection, VPN access logging, proxy-based website blocking, and domain service redundancy.
 
 ---
 
 ## Business Scenario
-BinCorp is modeled as a company operating a managed office building / office leasing environment. Its IT system requires:
+As a company operating a managed office building / office leasing environment. Its IT system requires:
 
 - centralized authentication and authorization
 - secure file sharing by department
