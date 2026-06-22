@@ -10,7 +10,7 @@ Internet traffic enters the lab through pfSense, which acts as the firewall, rou
 - VPN Zone: assigned to OpenVPN clients
 
 ## Identity Flow
-CL01 and internal servers authenticate against the Active Directory domain `bincorp.local` through DC01 and DC02.
+CL01 and internal servers authenticate against the Active Directory domain `samsung.local` through DC01 and DC02.
 
 ## DNS Flow
 Internal name resolution is provided by the domain controllers:
@@ -21,7 +21,7 @@ Internal name resolution is provided by the domain controllers:
 Users authenticate to the domain, then access shared folders on APP01 based on group membership and NTFS/share permissions.
 
 ## Intranet Flow
-Users browse to `https://intranet.bincorp.local`, which resolves to APP01 and is secured using a certificate issued by BinCorp-RootCA.
+Users browse to `https://intranet.samsung.local`, which resolves to APP01 and is secured using a certificate issued by Samsung-RootCA.
 
 ## Proxy Flow
 CL01 routes web access through WinGate Proxy on APP01. Proxy policy allows or blocks traffic based on configured access rules.

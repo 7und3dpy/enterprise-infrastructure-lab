@@ -1,7 +1,7 @@
 # Backup and DR Note
 
 ## Overview
-This document summarizes backup priorities, recovery considerations, and disaster recovery observations for the BinCorp enterprise infrastructure lab. The purpose is to define a realistic recovery mindset for the implemented environment, even though this lab does not include a full enterprise backup platform.
+This document summarizes backup priorities, recovery considerations, and disaster recovery observations for the Samsung enterprise infrastructure lab. The purpose is to define a realistic recovery mindset for the implemented environment, even though this lab does not include a full enterprise backup platform.
 
 The backup and DR approach focuses on protecting the most critical services first, minimizing recovery time for core infrastructure, and identifying where the current lab still has single points of failure.
 
@@ -329,7 +329,7 @@ If the lab were expanded further, the following improvements would strengthen ba
 ---
 
 ## 7. Conclusion
-The BinCorp enterprise infrastructure lab includes meaningful resilience at the identity layer through dual Domain Controllers, but it still contains single-instance dependencies at the application and monitoring layers.
+The Samsung enterprise infrastructure lab includes meaningful resilience at the identity layer through dual Domain Controllers, but it still contains single-instance dependencies at the application and monitoring layers.
 
 A realistic DR interpretation of the current lab is:
 - **core identity services are partially resilient**

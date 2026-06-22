@@ -1,7 +1,7 @@
 # Use Cases
 
 ## Overview
-This section presents representative use cases used to validate the enterprise infrastructure lab for BinCorp. The scenarios focus on authentication monitoring, VPN access, proxy policy enforcement, and domain service redundancy. Each use case includes objective, components involved, execution steps, and expected results.
+This section presents representative use cases used to validate the enterprise infrastructure lab for Samsung. The scenarios focus on authentication monitoring, VPN access, proxy policy enforcement, and domain service redundancy. Each use case includes objective, components involved, execution steps, and expected results.
 
 ---
 
@@ -18,14 +18,14 @@ Validate that failed domain authentication attempts are recorded by the Domain C
 - Splunk Universal Forwarder
 
 ### Preconditions
-- CL01 is joined to `bincorp.local`
+- CL01 is joined to `samsung.local`
 - DC01 and DC02 are operational
 - Security Event Logs from DC01 and DC02 are forwarded to Splunk
 - A domain user account exists, for example `reception.user`
 
 ### Execution Steps
 1. On CL01, sign out from the current session.
-2. At the Windows sign-in screen, enter a valid domain username such as `BINCORP\reception.user`.
+2. At the Windows sign-in screen, enter a valid domain username such as `SAMSUNG\reception.user`.
 3. Enter an incorrect password multiple times.
 4. Observe that Windows denies the authentication attempt.
 5. Return to SPLUNK01 and open Search & Reporting.
@@ -58,7 +58,7 @@ Validate that remote VPN access is functional and that VPN-related events from p
 - OpenVPN
 - SPLUNK01
 - APP01
-- BinCorp Intranet
+- Samsung Intranet
 
 ### Preconditions
 - OpenVPN server is configured on pfSense
@@ -72,7 +72,7 @@ Validate that remote VPN access is functional and that VPN-related events from p
 3. Confirm that the VPN tunnel is established and a VPN IP address is assigned.
 4. After connection, browse to:
 ```bash
-https://intranet.bincorp.local
+https://intranet.samsung.local
 ```
 5. On SPLUNK01, run the following query:
 ```spl
@@ -158,7 +158,7 @@ Validate that domain services remain partially available when one Domain Control
 ping 10.10.10.11
 4. Validate that internal service continuity remains available, for example by opening:
 ```bash
-https://intranet.bincorp.local
+https://intranet.samsung.local
 ```
 5. Optionally verify that DNS and AD tools remain available on DC02.
 
@@ -183,7 +183,7 @@ Validate that the internal web portal is protected with a certificate issued by 
 
 ### Components Involved
 - DC01
-- AD CS / BinCorp-RootCA
+- AD CS / Samsung-RootCA
 - APP01
 - IIS
 - CL01
@@ -191,20 +191,20 @@ Validate that the internal web portal is protected with a certificate issued by 
 ### Preconditions
 - Enterprise Root CA is deployed
 - Web Server template is issued
-- APP01 has a certificate for intranet.bincorp.local
+- APP01 has a certificate for intranet.samsung.local
 - IIS HTTPS binding is configured
 
 ### Execution Steps
 1. On CL01, browse to:
 ```bash
-https://intranet.bincorp.local
+https://intranet.samsung.local
 ```
 2. Verify that the internal portal loads successfully over HTTPS.
 3. Confirm certificate usage through IIS binding and local certificate store on APP01.
 
 ### Expected Results
 - Intranet is accessible over HTTPS.
-- A certificate issued by BinCorp-RootCA is bound to IIS.
+- A certificate issued by Samsung-RootCA is bound to IIS.
 - Internal PKI is actively used to secure the internal web application.
 
 ### Security Value
@@ -213,7 +213,7 @@ This use case demonstrates encryption in transit, trust management, and practica
 
 # Summary
 
-The implemented use cases demonstrate that the BinCorp enterprise infrastructure lab supports:
+The implemented use cases demonstrate that the Samsung enterprise infrastructure lab supports:
 
 - centralized monitoring of failed logon attempts
 - controlled VPN-based remote access

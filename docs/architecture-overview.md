@@ -1,7 +1,7 @@
 # Architecture Overview
 
 ## Project Context
-The BinCorp Enterprise Infrastructure Lab simulates the IT environment of a building management and office leasing company. The architecture combines identity services, internal business services, remote access, web filtering, intrusion detection, and centralized monitoring in one virtualized environment.
+The Samsung Enterprise Infrastructure Lab simulates the IT environment of a building management and office leasing company. The architecture combines identity services, internal business services, remote access, web filtering, intrusion detection, and centralized monitoring in one virtualized environment.
 
 The design goal is to reflect an enterprise-style infrastructure while remaining practical to deploy in a personal lab.
 
@@ -176,4 +176,4 @@ These limitations are acceptable for a lab environment and are documented rather
 ---
 
 ## Conclusion
-The BinCorp lab architecture is designed to reflect how multiple enterprise technologies operate together rather than as isolated tools. The result is a layered infrastructure model that supports identity, secure internal services, remote access, detection, and monitoring in a realistic virtual lab.
+The Samsung lab architecture is designed to reflect how multiple enterprise technologies operate together rather than as isolated tools. The result is a layered infrastructure model that supports identity, secure internal services, remote access, detection, and monitoring in a realistic virtual lab.

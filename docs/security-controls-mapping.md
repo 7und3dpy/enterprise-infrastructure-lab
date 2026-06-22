@@ -1,7 +1,7 @@
 # Security Controls Mapping
 
 ## Overview
-This document maps the implemented components of the BinCorp enterprise infrastructure lab to practical security control areas. The purpose is not to claim full compliance with any formal certification program, but to demonstrate how the deployed technical controls align with enterprise security design principles and with the general direction of ISO/IEC 27001-style governance.
+This document maps the implemented components of the Samsung enterprise infrastructure lab to practical security control areas. The purpose is not to claim full compliance with any formal certification program, but to demonstrate how the deployed technical controls align with enterprise security design principles and with the general direction of ISO/IEC 27001-style governance.
 
 The environment was designed to combine identity services, access control, secure remote access, internal PKI, monitoring, web filtering, and centralized log analysis into a cohesive enterprise lab.
 
@@ -120,8 +120,8 @@ These controls support secure remote access while limiting what a connected VPN 
 
 ### Implemented Components
 - Active Directory Certificate Services
-- `BinCorp-RootCA`
-- Web Server certificate for `intranet.bincorp.local`
+- `Samsung-RootCA`
+- Web Server certificate for `intranet.samsung.local`
 - HTTPS binding on IIS
 
 ### Technical Controls
@@ -308,7 +308,7 @@ This lab includes recovery-oriented design considerations, but it does not imple
 ---
 
 ## Conclusion
-The BinCorp enterprise infrastructure lab demonstrates a layered security design rather than a single isolated technology stack. Identity, network control, remote access, encryption, proxy enforcement, IDS, and SIEM were implemented as interacting controls.
+The Samsung enterprise infrastructure lab demonstrates a layered security design rather than a single isolated technology stack. Identity, network control, remote access, encryption, proxy enforcement, IDS, and SIEM were implemented as interacting controls.
 
 The result is a practical enterprise-style lab that supports:
 - centralized authentication

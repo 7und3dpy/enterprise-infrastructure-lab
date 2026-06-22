@@ -1,7 +1,7 @@
 # Deployment Guide
 
 ## Overview
-This document summarizes the deployment order used to build the BinCorp Enterprise Infrastructure Lab. The sequence was intentionally designed to reduce dependency issues and keep troubleshooting manageable.
+This document summarizes the deployment order used to build the Samsung Enterprise Infrastructure Lab. The sequence was intentionally designed to reduce dependency issues and keep troubleshooting manageable.
 
 The strategy was:
 1. build the network foundation
@@ -43,7 +43,7 @@ Deploy the first identity and DNS node.
 - join Server Zone
 - install AD DS and DNS
 - create the domain:
-  - `bincorp.local`
+  - `samsung.local`
 
 ### Result
 The environment gained centralized identity and DNS services.
@@ -79,7 +79,7 @@ Validate that a user endpoint can function in the domain.
 - deploy CL01 in Client Zone
 - receive DHCP from pfSense
 - use domain DNS servers
-- join `bincorp.local`
+- join `samsung.local`
 - validate domain authentication
 
 ### Result
@@ -117,9 +117,9 @@ Secure the internal intranet with internal PKI.
 ### Main Tasks
 - install AD CS on DC01
 - configure Enterprise Root CA:
-  - `BinCorp-RootCA`
+  - `Samsung-RootCA`
 - issue Web Server certificate template
-- request certificate for `intranet.bincorp.local`
+- request certificate for `intranet.samsung.local`
 - bind certificate to IIS HTTPS
 - validate HTTPS access from CL01
 

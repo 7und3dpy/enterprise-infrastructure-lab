@@ -1,7 +1,7 @@
 # IP Plan
 
 ## Overview
-This document defines the IP addressing plan for the BinCorp Enterprise Infrastructure Lab.  
+This document defines the IP addressing plan for the Samsung Enterprise Infrastructure Lab.  
 The addressing model is designed to be simple, readable, and scalable enough for segmented enterprise-style lab deployment.
 
 ---
@@ -46,8 +46,8 @@ This allows subnet-based separation between server, client, VPN, and future expa
 
 | Item | Value |
 |---|---|
-| Domain Name | bincorp.local |
-| NetBIOS Name | BINCORP |
+| Domain Name | samsung.local |
+| NetBIOS Name | SAMSUNG |
 
 ---
 
@@ -114,11 +114,11 @@ The VPN subnet is routed through pfSense and restricted by explicit OpenVPN fire
 
 | Record | FQDN | IP Address |
 |---|---|---|
-| dc01 | dc01.bincorp.local | 10.10.10.10 |
-| dc02 | dc02.bincorp.local | 10.10.10.11 |
-| app01 | app01.bincorp.local | 10.10.10.20 |
-| intranet | intranet.bincorp.local | 10.10.10.20 |
-| splunk01 | splunk01.bincorp.local | 10.10.10.50 |
+| dc01 | dc01.samsung.local | 10.10.10.10 |
+| dc02 | dc02.samsung.local | 10.10.10.11 |
+| app01 | app01.samsung.local | 10.10.10.20 |
+| intranet | intranet.samsung.local | 10.10.10.20 |
+| splunk01 | splunk01.samsung.local | 10.10.10.50 |
 
 ---
 
@@ -131,4 +131,4 @@ The current IP plan supports:
 - dedicated VPN subnet
 - reserved DMZ subnet for future use
 
-This structure is sufficient for the current BinCorp lab and can be expanded later if additional hosts or services are added.
+This structure is sufficient for the current Samsung lab and can be expanded later if additional hosts or services are added.
